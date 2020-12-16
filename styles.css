@@ -1,0 +1,248 @@
+
+:root {
+    background: white;
+
+--titletext: #000000;
+--twofour: #2B8EAD;
+--titlebackground: #333333;
+--oneeight: #6F98A8;
+--apptext: #FFFFFF;
+--sixseven:#BFBFBF; 
+--appback: #EFEFEF;
+--threefivenine: #2F454E;
+--button:#72C3DC;
+}
+body {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: 'Segoe UI',Arial, Helvetica, sans-serif;
+    width: 100vw;
+
+}
+
+
+.page-wrapper{
+    margin:0 auto;
+    max-width: 960px;
+    width: 100vw;
+    background: var(--appback);
+    
+}
+h1 , h2{
+    text-align: center;
+    
+}
+em{
+    display:block;
+    text-align: center;
+    padding-bottom: 50px;
+
+}
+.app-wrapper{
+    border-top: 5px solid var(--sixseven);
+    max-height: 80vh;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 6fr 1fr;
+    
+}
+.numbers{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+.number-box{
+    height: 100%;
+    width: 100%;
+}
+
+.number-box h1{
+    font-size: 6em;
+    color: var(--apptext);
+}
+
+.box1{
+    background: var(--oneeight);
+}
+.box2{
+    background: var(--twofour);
+}
+.box3{
+    background: var(--threefivenine);
+}
+.box4{
+    background: var(--twofour);
+}
+.box5{
+    background: var(--threefivenine);
+}
+.box6{
+    background: var(--sixseven);
+}
+.box7{
+    background: var(--sixseven);
+}
+.box8{
+    background: var(--oneeight);
+}
+.box8{
+    background: var(--oneeight);
+}
+.box9{
+    background: var(--threefivenine);
+}
+
+.ui-buttons-wrapper{
+    height: 25%;
+}
+
+.ui-button{
+    background: var(--button);
+    display:block;
+    width: 80%;
+    margin: 15px auto;
+    border-radius: 10px;
+    height: 50px;
+    border: none;
+    border-bottom: 5px solid var(--twofour);
+    color:var(--apptext);
+
+}
+
+@media screen and (max-width: 376px) {
+    .page-wrapper{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        padding:0;
+        background: white;
+    }
+    h2 {
+        color: white;
+        background: var(--titlebackground);
+        height: 5vh;
+        margin: 0;
+        padding-top: 10px;
+    }
+    em{
+        padding-top: 5px;
+    }
+
+    .app-wrapper{
+        border: none;
+        display: flex;
+        flex-direction: column-reverse;
+        background: white;
+    }
+    .numbers{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+
+    }
+
+    .number-box{
+        box-sizing: border-box;
+        height: 50px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 3px;
+    }
+    
+    .number-box h1{
+        font-size: 1em;
+        color: var(--titletext);
+        display: inline;
+        
+    }
+    .ui-buttons-wrapper{
+        height: 15%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ui-button{
+        width: 80px;
+        margin: 15px 5px;
+    }
+
+    .box1{
+        background: linear-gradient(to right, 
+            var(--oneeight) 0%, 
+            var(--oneeight) 3%, 
+            var(--appback) 3%, 
+            var(--appback) 100%
+        );
+    }
+    .box2{
+        background: linear-gradient(to right, 
+            var(--twofour) 0%, 
+            var(--twofour) 3%, 
+            var(--appback) 3%, 
+            var(--appback) 100%
+        );
+    }
+    .box3{
+        background: linear-gradient(to right, 
+            var(--threefivenine) 0%, 
+            var(--threefivenine) 3%, 
+            var(--appback) 3%, 
+            var(--appback) 100%
+        );
+    }
+    .box4{
+        background: linear-gradient(to right, 
+        var(--twofour) 0%, 
+        var(--twofour) 3%, 
+        var(--appback) 3%, 
+        var(--appback) 100%
+    );
+    }
+    .box5{
+        background: linear-gradient(to right, 
+        var(--threefivenine) 0%, 
+        var(--threefivenine) 3%, 
+        var(--appback) 3%, 
+        var(--appback) 100%
+        )
+    }
+    .box6{
+        background: linear-gradient(to right, 
+        var(--sixseven) 0%, 
+        var(--sixseven) 3%, 
+        var(--appback) 3%, 
+        var(--appback) 100%
+        )
+    }
+    .box7{
+        background: linear-gradient(to right, 
+        var(--sixseven) 0%, 
+        var(--sixseven) 3%, 
+        var(--appback) 3%, 
+        var(--appback) 100%
+        )
+    }
+    .box8{
+        background: linear-gradient(to right, 
+        var(--oneeight) 0%, 
+        var(--oneeight) 3%, 
+        var(--appback) 3%, 
+        var(--appback) 100%
+        )
+    }
+    .box9{
+        background: linear-gradient(to right, 
+        var(--threefivenine) 0%, 
+        var(--threefivenine) 3%, 
+        var(--appback) 3%, 
+        var(--appback) 100%
+        )
+    }
+}
