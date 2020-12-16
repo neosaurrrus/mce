@@ -1,10 +1,8 @@
 const defaultOrder = [1,2,3,4,5,6,7,8,9]
 const currentOrder = [...defaultOrder]
-
 const numbers = document.querySelector(".numbers");
 const shuffleButton = document.querySelector(".shuffle")
 const sortButton = document.querySelector(".sort")
-
 
 function renderNumbers(order){
     newNumbers = order.map( number => {
@@ -13,7 +11,6 @@ function renderNumbers(order){
     })
    numbers.innerHTML = newNumbers.join("")
 }
-
 
 //Shuffle Button Logic
 shuffleButton.addEventListener( "click", function(){
